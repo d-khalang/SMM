@@ -1,0 +1,68 @@
+{
+    "plants":[
+        {
+            "plantId": 101,
+            "plantDate": "2025-01-22",
+            "deviceInventory": [],
+            "lastUpdated": ""
+        }
+    ],
+    "devices": [
+        {
+            "deviceId": 10101,
+            "deviceName": "moisture_sensor",
+            "deviceType": "sensor",
+            "deviceStatus": "ACTIVE",
+            "statusOptions": [
+                "INACTIVE",
+                "ACTIVE"
+            ],
+            "deviceLocation": {
+                "plantId": 101
+            },
+            "measureTypes": [
+                "soil_moisture"
+            ],
+            "availableServices": [
+                "MQTT"
+            ],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topics": [
+                        "SMM/sensors/101/soil_moisture"
+                    ]
+                }
+            ]
+        },
+        {
+            "deviceId": 10102,
+            "deviceName": "water_pump",
+            "deviceType": "actuator",
+            "deviceStatus": "STOP_WATER",
+            "statusOptions": [
+                "INACTIVE",
+                "STOP_WATER",
+                "POUR_WATER"
+            ],
+            "deviceLocation": {
+                "plantId": 101
+            },
+            "measureTypes": [
+                "water_flow"
+            ],
+            "available_services": [
+                "MQTT"
+            ],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topics": [
+                        "SMM/actuators/101/water_flow"
+                    ]
+                }
+            ]
+        }
+    ],
+    "lastUpdated": ""
+        }
