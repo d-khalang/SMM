@@ -62,7 +62,14 @@ Change to the root directory of the repository:
 cd SMM
 ```
 
-## 3. Run the Setup Scripts in Order and using different terminals in the root directory
+## 3. Install Dependencies
+Install all required libraries listed in the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 4. Run the Setup Scripts in Order and using different terminals in the root directory
 
 ### Step 1: Set up MongoDB
 Run the MongoDB setup script:
