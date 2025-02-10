@@ -50,7 +50,7 @@ Follow these steps to set up and run the project:
 Clone the repository using Git:
 
 ```bash
-git clone SMM
+git clone https://github.com/d-khalang/SMM.git
 ```
 
 Or download the repository as a ZIP file and extract it.
